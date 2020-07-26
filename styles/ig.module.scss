@@ -1,0 +1,10 @@
+.linkList {
+  li {
+    @apply w-full;
+    @apply h-12;
+    @apply bg-ig-dark-blue;
+    @apply text-center;
+    line-height: 3rem;
+    @apply text-white;
+  }
+}

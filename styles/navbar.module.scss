@@ -1,0 +1,20 @@
+.navbar {
+  ul {
+    @apply text-center;
+    @apply my-8;
+    li {
+      @apply inline-block;
+      @apply px-4;
+      @apply cursor-pointer;
+      &:hover {
+        @apply text-orange;
+        @apply underline;
+      }
+
+      &.active {
+        @apply text-orange;
+        @apply underline;
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+.icons a {
+  @apply h-auto;
+  @apply w-6;
+  @apply mx-2;
+  @apply transition;
+  @apply duration-200;
+  @apply ease-in-out;
+  @media (hover: hover) {
+    &:hover {
+      @apply text-orange;
+    }
+  }
+}
+
+.projects {
+  section {
+    @apply mb-16;
+
+    & > p {
+      @apply mt-2;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .projectImg {
+      @apply order-last;
+      @apply py-4;
+    }
+  }
+
+  .project {
+    @apply flex;
+    @apply items-center;
+
+    @media (max-width: 640px) {
+      @apply flex-col;
+      & > div {
+        @apply w-full;
+        @apply px-0;
+      }
+    }
+
+
+    p {
+      @apply text-justify;
+    }
+  }
+}
+
+.youtubeIframe {
+  @apply h-64;
+  @screen md {
+    height: 380px;
+  }
+}
