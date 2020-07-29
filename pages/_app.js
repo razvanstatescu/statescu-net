@@ -1,5 +1,6 @@
 import '../styles/main.scss';
 import Head from 'next/head';
+import {Footer} from "../components/Footer";
 
 export default function MyApp({Component, pageProps}) {
     return (
@@ -24,6 +25,7 @@ export default function MyApp({Component, pageProps}) {
                 />
             </Head>
             <Component {...pageProps} />
+            <Footer/>
         </div>
     );
 }

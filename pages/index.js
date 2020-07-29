@@ -32,7 +32,8 @@ export default () => {
                     and
                     scalable web applications. I
                     specialize in JavaScript and PHP, with professional experience working with Angular and NodeJS.
-                    I also have a strong knowledge of HapiJS and Codeigniter, Docker, Microservices and a lot of
+                    I also have a strong knowledge of HapiJS and Codeigniter, Docker, SQL/NoSQL databases, Microservices
+                    and a lot of
                     other technologies and APIs.</p>
                 <p className="text-justify mt-4">Starting from May 2020 I'm also creating programming related content on
                     YouTube and Instagram. At the beginning of July I started a Podcast called The Dev Chat where I
