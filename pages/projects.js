@@ -36,7 +36,9 @@ export default () => {
                                                                                 alt="brunch"/></a>
                         </div>
                         <div className="w-2/3 pl-4">
-                            <h3 className="font-bold text-xl">Brunch.</h3>
+                            <h3 className="font-bold text-xl"><a href="https://usebrunch.com"
+                                                                 target="_blank">Brunch. <FontAwesomeIcon
+                                icon={faExternalLinkAlt} className="h-3 w-auto inline-block"/></a></h3>
                             <p>Brunch is a feedback tool for websites and web apps that should bring developers,
                                 designers
                                 and clients in one place. It's a project I started together with a partner and I'm in
