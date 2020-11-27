@@ -1,5 +1,6 @@
 import {Navbar} from './Navbar';
 import React from "react";
+import HeaderStyle from '../styles/header.module.scss'
 
 export class Header extends React.Component {
 
@@ -24,7 +25,8 @@ export class Header extends React.Component {
     render() {
         return (
             <div>
-                <img src="/icon.jpg" className="h-32 w-32 md:h-40 md:w-40 rounded-full mx-auto mb-8"/>
+                <img src="/avatar.jpg"
+                     className={`h-32 w-32 md:h-40 md:w-40 rounded-full mx-auto mb-8 ${HeaderStyle.avatarImg}`}/>
                 <h1 className="font-raleway font-black text-3xl md:text-5xl uppercase text-center">Răzvan Stătescu</h1>
                 <h2 className={`font-bold text-center text-xs md:text-base`} id="blink-content">Freelance Web Developer
                     & Content

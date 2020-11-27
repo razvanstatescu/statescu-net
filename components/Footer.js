@@ -5,8 +5,6 @@ import {faGithub, faInstagram, faLinkedin, faYoutube} from "@fortawesome/free-br
 export const Footer = () => {
     return (
         <footer className="bg-gray-100 py-16">
-            <p className="text-center text-xs text-gray-700">Icon made by monkik from <a
-                href="https://www.flaticon.com">www.flaticon.com</a></p>
 
             <div className={`flex items-center justify-center mt-8 ${HomeStyle.icons}`}>
                 <p className="mr-4">You can find me on</p>

@@ -11,3 +11,9 @@
     opacity: 0;
   }
 }
+
+.avatarImg {
+  //box-shadow: 0px 0px 15px 10px rgba(255, 153, 51, 0.2);
+  @apply border-4;
+  @apply border-orange;
+}

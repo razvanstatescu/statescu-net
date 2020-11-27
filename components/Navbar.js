@@ -14,6 +14,11 @@ export const Navbar = () => {
                 <Link activeClassName={NavbarStyle.active} href="/projects">
                     <li>🖥 Recent projects</li>
                 </Link>
+                <li>
+                    <a href="https://blog.statescu.net" target="_blank">
+                        ✏️ Blog
+                    </a>
+                </li>
             </ul>
         </nav>
     )
