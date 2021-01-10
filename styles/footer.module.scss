@@ -1,0 +1,22 @@
+.icons a {
+  @apply h-auto;
+  @apply w-6;
+  @apply transition;
+  @apply duration-200;
+  @apply ease-in-out;
+  @media (hover: hover) {
+    &:hover {
+      @apply text-orange;
+    }
+  }
+}
+
+.icon {
+  display: inline-block;
+  transform: rotate(-15deg);
+  transform-origin: center center;
+  @apply mx-auto;
+  &:hover {
+    transform: rotate(0);
+  }
+}

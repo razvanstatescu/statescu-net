@@ -40,7 +40,6 @@
       }
     }
 
-
     p {
       @apply text-justify;
     }
@@ -50,6 +49,6 @@
 .youtubeIframe {
   @apply h-64;
   @screen md {
-    height: 380px;
+    height: 400px;
   }
 }
