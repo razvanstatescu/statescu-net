@@ -1,0 +1,35 @@
+.formGroup {
+  input {
+    @apply w-full;
+    @apply h-12;
+    @apply bg-gray-200;
+    @apply px-4;
+    @apply rounded-lg;
+  }
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+}
+
+.resultItem {
+  @apply bg-gray-300;
+  @apply p-8;
+  @apply w-full;
+  @apply rounded-lg;
+  @screen md {
+    @apply flex-1;
+  }
+  .header {
+    @apply text-xl;
+    @apply font-bold;
+    @apply font-raleway;
+  }
+}

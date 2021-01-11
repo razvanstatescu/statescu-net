@@ -1,6 +1,5 @@
 import { faGithub, faInstagram, faLinkedin, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { NextSeo } from 'next-seo';
 
 import { Header } from '../components/Header';
 import HomeStyle from '../styles/home.module.scss';
@@ -8,38 +7,22 @@ import HomeStyle from '../styles/home.module.scss';
 export default () => {
   return (
     <div className="container mx-auto mt-8 md:mt-24 max-w-3xl mb-16">
-      <NextSeo
-        title="Răzvan Stătescu | Freelance Web Developer & Content Creator"
-        description="Freelance Full-Stack Developer with experience building websites and scalable web applications. IT content creator on YouTube and Instagram. IT Blogger."
-        openGraph={{
-          url: "https://statescu.net",
-          title: "Răzvan Stătescu | Freelance Web Developer & Content Creator",
-          description:
-            "Freelance Full-Stack Developer with experience building websites and scalable web applications. IT content creator on YouTube and Instagram. IT Blogger.",
-          images: [
-            {
-              url: "https://statescu.net/fb-banner.jpg",
-              width: 1200,
-              height: 630,
-            },
-          ],
-          site_name: "Statescu.net",
-        }}
-      />
-
       <div>
         <Header />
         <p className="mt-8">
-          🖥 I am a Freelance Full-Stack developer with experience building websites and scalable web applications. I
-          specialize in JavaScript and PHP, with professional experience working with Angular and NodeJS. I also have a
-          strong knowledge of HapiJS and Codeigniter, Docker, SQL/NoSQL databases, Microservices and a lot of other
-          technologies and APIs.
+          🖥 I am a passionate Freelance Full-Stack developer with experience building websites and web applications. I
+          specialize in <span className="underline">JavaScript</span> and <span className="underline">Typescript</span>,
+          with professional experience working with <span className="underline">Angular 2+</span> and{" "}
+          <span className="underline">NodeJS</span>. I also have a strong knowledge of Vue.Js, Express, TailwindCSS,
+          HapiJS, Docker, and a lot of other technologies and APIs.
         </p>
         <p className="mt-4">
-          🎬 Starting from May 2020 I'm also creating programming related content on YouTube and Instagram. At the
-          beginning of July I started a Podcast called The Dev Chat where I bring people from the industry and chat over
-          different IT related subjects. I learned most of the things I know from the internet so this is my way of
-          giving back to the community.
+          🎬 Starting from May 2020 I'm also creating Web Development related content on YouTube and Instagram. In
+          December 2020 I've also started{" "}
+          <a href="https://blog.statescu.net" target="_blank" className="underline">
+            blogging
+          </a>
+          . I learned most of the things I know from the internet so this is my way of giving back to the community.
         </p>
         <p className="mt-4">
           🎉 In mid-2020 I co-founded{" "}
