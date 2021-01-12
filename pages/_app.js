@@ -53,7 +53,9 @@ export default function MyApp({ Component, pageProps }) {
           handle: "@StatescuRazvan",
         }}
       />
-      <Component {...pageProps} />
+      <div className="p-4 md:p-0">
+        <Component {...pageProps} />
+      </div>
       <Footer />
     </div>
   );

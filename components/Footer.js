@@ -5,7 +5,7 @@ import FooterStyle from '../styles/footer.module.scss';
 
 export const Footer = () => {
   return (
-    <footer className="bg-gray-100 py-16">
+    <footer className="bg-gray-100 py-16 px-4 md:px-0">
       <div className="container mx-auto  max-w-3xl flex items-center space-x-16">
         <div className="">
           <span

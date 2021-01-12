@@ -64,8 +64,7 @@ export default class RateCalculator extends React.Component {
               <p>👉🏻 Take into account your country and experience when you choose your monthly income.</p>
               <p className="mb-2">
                 👉🏻 One easy thing you can do if you had a full-time job recently is to take your gross salary (NOT net
-                salary) and divide that by 160 (number of workable hours in a week). You can use that number here as a
-                starting point.
+                salary) and use that number here as a starting point.
               </p>
               <NumberFormat
                 thousandSeparator={true}
