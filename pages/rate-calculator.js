@@ -29,18 +29,12 @@ export default class RateCalculator extends React.Component {
     });
 
     if (currentState?.income && currentState?.billable_hours && currentState?.weeks_off) {
+      const ratePerHour = (1.25 * currentState.income) / ((52 - currentState.weeks_off) * currentState.billable_hours);
       this.setState({
         results: {
-          week: Math.round(
-            (((2 * currentState.income) / ((52 - currentState.weeks_off) * currentState.billable_hours)) *
-              currentState.billable_hours) /
-              5
-          ),
-          day: Math.round(
-            ((2 * currentState.income) / ((52 - currentState.weeks_off) * currentState.billable_hours)) *
-              currentState.billable_hours
-          ),
-          hour: Math.round((2 * currentState.income) / ((52 - currentState.weeks_off) * currentState.billable_hours)),
+          week: Math.round(ratePerHour * currentState.billable_hours),
+          day: Math.round((ratePerHour * currentState.billable_hours) / 5),
+          hour: Math.round(ratePerHour),
         },
       });
     }
@@ -67,6 +61,12 @@ export default class RateCalculator extends React.Component {
           </p>
           <div className="flex space-y-8 flex-wrap">
             <div className={`w-full ${RateCalculatorStyle.formGroup}`}>
+              <p>👉🏻 Take into account your country and experience when you choose your monthly income.</p>
+              <p className="mb-2">
+                👉🏻 One easy thing you can do if you had a full-time job recently is to take your gross salary (NOT net
+                salary) and divide that by 160 (number of workable hours in a week). You can use that number here as a
+                starting point.
+              </p>
               <NumberFormat
                 thousandSeparator={true}
                 onValueChange={this.handleInputChange}
@@ -113,6 +113,14 @@ export default class RateCalculator extends React.Component {
               <div>{this.state.results.hour}</div>
             </div>
           </div>
+          <p className="mt-2">
+            ‼️ You should use this rate as a starting point and adjust it as you get more experience on freelancing and
+            the market you are operating in.
+          </p>
+
+          <p className="mt-8">
+            If you have any questions don't hesitate to contact me (details below, in the website footer).
+          </p>
         </div>
       </div>
     );
