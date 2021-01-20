@@ -8,6 +8,7 @@ import RateCalculatorStyle from '../styles/rate-calculator.module.scss';
 export default class RateCalculator extends React.Component {
   constructor(props) {
     super(props);
+
     this.state = {
       results: {
         week: "-",
@@ -19,7 +20,7 @@ export default class RateCalculator extends React.Component {
 
   handleInputChange = (event) => {
     const target = event.target;
-    const value = target ? target.value : event.value * 12;
+    const value = target ? target.value : event.value;
     const name = target ? target.name : "income";
 
     const currentState = Object.assign({}, this.state, { [name]: value });
@@ -61,7 +62,7 @@ export default class RateCalculator extends React.Component {
           </p>
           <div className="flex space-y-8 flex-wrap">
             <div className={`w-full ${RateCalculatorStyle.formGroup}`}>
-              <p>👉🏻 Take into account your country and experience when you choose your monthly income.</p>
+              <p>👉🏻 Take into account your country and experience when you choose your annual income.</p>
               <p className="mb-2">
                 👉🏻 One easy thing you can do if you had a full-time job recently is to take your gross salary (NOT net
                 salary) and use that number here as a starting point.
@@ -69,9 +70,9 @@ export default class RateCalculator extends React.Component {
               <NumberFormat
                 thousandSeparator={true}
                 onValueChange={this.handleInputChange}
-                placeholder="Desired monthly income"
+                placeholder="Desired annual income"
               />
-              <small className="mt-1 text-gray-700 block">Input the monthly income in your own currency.</small>
+              <small className="mt-1 text-gray-700 block">Input the annual income in your own currency.</small>
               {/* <input
                 type="number"
                 name="income"

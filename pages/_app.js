@@ -19,18 +19,9 @@ export default function MyApp({ Component, pageProps }) {
           async
         ></script>
 
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145375185-5"></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-                 window.dataLayer = window.dataLayer || [];
-                    function gtag(){dataLayer.push(arguments);}
-                    gtag('js', new Date());
-
-                    gtag('config', 'UA-145375185-5');
-              `,
-          }}
-        />
+        {process.browser && (
+          <script async defer data-domain="statescu.net" src="https://plausible.io/js/plausible.js"></script>
+        )}
       </Head>
       <DefaultSeo
         title="Răzvan Stătescu | Freelance Web Developer & Content Creator"
@@ -51,6 +42,7 @@ export default function MyApp({ Component, pageProps }) {
         }}
         twitter={{
           handle: "@StatescuRazvan",
+          cardType: "summary_large_image",
         }}
       />
       <div className="p-4 md:p-0">
