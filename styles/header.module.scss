@@ -1,6 +1,6 @@
 .blinkCursor {
   &::after {
-    content: ' |';
+    content: " |";
     color: orange;
     animation: blink 1s step-end infinite;
   }
@@ -16,4 +16,10 @@
   //box-shadow: 0px 0px 15px 10px rgba(255, 153, 51, 0.2);
   @apply border-4;
   @apply border-orange;
+}
+
+.arrowSvg {
+  transform: rotate(90deg);
+  left: calc(50% - 10rem);
+  top: 7.5rem;
 }

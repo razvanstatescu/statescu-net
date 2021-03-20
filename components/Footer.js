@@ -43,7 +43,7 @@ export const Footer = () => {
           </div>
         </div>
       </div>
-      <div class="buy-me-a-coffee mt-8 flex justify-center">
+      <div className="buy-me-a-coffee mt-8 flex justify-center">
         <a href="https://www.buymeacoffee.com/razvanstatescu" target="_blank">
           <img
             src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"

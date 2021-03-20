@@ -1,11 +1,19 @@
 .navbar {
   ul {
     @apply text-center;
-    @apply my-8;
+    @apply mt-8;
+    @apply mb-8;
+    @screen md {
+      @apply mb-16;
+    }
     li {
       @apply inline-block;
       @apply px-4;
       @apply cursor-pointer;
+      @apply pb-3;
+      @screen md {
+        @apply pb-0;
+      }
       &:hover {
         @apply text-orange;
         @apply underline;
