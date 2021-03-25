@@ -23,11 +23,7 @@ export class Header extends React.Component {
   render() {
     return (
       <div className="relative">
-        <img src="/icons/arrow.svg" className={`hidden md:block h-10 w-10 absolute ${HeaderStyle.arrowSvg}`} />
-        <img
-          src="/avatar.jpg"
-          className={`h-32 w-32 md:h-40 md:w-40 rounded-full mx-auto mb-6 ${HeaderStyle.avatarImg}`}
-        />
+        <img src="/avatar-new.svg" className={`rounded-full mx-auto ${HeaderStyle.avatarImg}`} />
         <h1 className="font-raleway font-black text-4xl md:text-5xl text-center">Răzvan Stătescu</h1>
         <h2 className={`font-bold text-center text-xs md:text-base`} id="blink-content">
           Freelance Web Developer & Content Creator

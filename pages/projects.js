@@ -7,7 +7,7 @@ import HomeStyle from '../styles/home.module.scss';
 
 export default () => {
   return (
-    <div className="container mx-auto mt-8 md:mt-24 max-w-4xl mb-16">
+    <div className="container mx-auto mt-8 md:mt-16 max-w-4xl mb-16">
       <NextSeo
         title="Răzvan Stătescu | Recent Projects"
         openGraph={{

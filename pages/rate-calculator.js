@@ -43,7 +43,7 @@ export default class RateCalculator extends React.Component {
 
   render() {
     return (
-      <div className="container mx-auto mt-8 md:mt-24 max-w-3xl mb-16">
+      <div className="container mx-auto mt-8 md:mt-16 max-w-3xl mb-16">
         <NextSeo
           title="Freelancer Rate Calculator"
           openGraph={{
